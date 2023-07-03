@@ -17,6 +17,8 @@ nav{
 .logo img{
   margin-top: 20px;
   padding-bottom: 2px;
+  z-index:-1;
+ 
 }
 .menu a{
     text-decoration:none ;
@@ -24,10 +26,13 @@ nav{
     font-size:20px ;
     padding: 10px 20px;
     margin: 0px 10px;
+    box-shadow: 0px 0px 10px#8B0000;
+ 
 }
 .menu a:last-child{
     background-color: #e74c3c;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px #eb6f6f;
 }
 .menu a:hover{
     background:#e74c3c ;
@@ -76,15 +81,21 @@ nav{
     font-size: 4.5rem;
     line-height: 4.5rem;
 }  
+.left h1 span{
+    text-shadow: 2px 2px 4px #c5d605f7;
+  }
+  
 .left button {
    background-color: #e74c3c;
    color: aliceblue;
    padding: 10px 20px;
    border:none;
    outline:none;
-   border-radius: 5px;
+   border-radius: 80px;
    font-family: "Poppins", sans-serif;
    margin-top: 20px;
+   box-shadow: 0px 0px 10px #dd6b6b;
+
 
 }
 .left button:hover {
@@ -226,4 +237,14 @@ nav{
   margin-top: 600px;
   color: #666;
    margin-right: 20px;
+}
+.liquid{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    top: -80px;
+}
+.liquid:nth-child(2){
+    filter: blur(50px);
 }
